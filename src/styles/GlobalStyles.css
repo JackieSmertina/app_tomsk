@@ -1,0 +1,510 @@
+:root {
+  --white: #ffffff;
+  --light-blue: #e6f2ff;
+  --medium-blue: #b3d1ff;
+  --dark-blue: #003366;
+  --navy-blue: #002244;
+  --button-blue: #004080;
+  --light-gray: #f8f9fa;
+  --border-color: #dee2e6;
+  --pink-bg: #fff0f5;
+  --purple-bg: #f5f0ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--dark-blue);
+  line-height: 1.6;
+}
+
+.container {
+  /* width: 50%; */ /* Убираем ограничение */
+  width: 100%; /* Или оставляем max-width: 1200px и margin: 0 auto; для центрирования на больших экранах */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--button-blue);
+  color: var(--white);
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: var(--navy-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col-12, .col-sm-12, .col-md-3, .col-md-4, .col-md-6, .col-md-9, .col-lg-3, .col-lg-4, .col-lg-6, .col-lg-9 {
+  padding: 0 15px;
+}
+
+/* Grid system */
+.col-12 { width: 100%; }
+.col-md-3 { width: 25%; }
+.col-md-4 { width: 33.333%; }
+.col-md-6 { width: 50%; }
+.col-md-9 { width: 75%; }
+.col-lg-3 { width: 25%; }
+.col-lg-4 { width: 33.333%; }
+.col-lg-6 { width: 50%; }
+.col-lg-9 { width: 75%; }
+
+/* Header styles */
+header {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  
+}
+
+.logo_wrapper {
+  width: 100%; /* Занимает всю доступную ширину */
+}
+
+
+/* Стили для социальных сетей */
+.social-links {
+  display: flex;
+  gap: 15px; /* Расстояние между иконками */
+  align-items: center; /* Выравнивание по центру по вертикали */
+  padding: 10px 0; /* Отступы сверху и снизу */
+  flex-shrink: 0; /* Запрещаем соцсетям сжиматься */
+  margin-left: auto; /* Отталкиваем их вправо, если нужно */
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+
+
+.menu-container {
+  display: flex;
+  align-items: center; /* Выравнивание по центру по вертикали */
+  justify-content: space-between; /* Распределяем элементы: логотип слева, соцсети справа */
+  gap: 20px; /* Расстояние между элементами */
+  flex-wrap: wrap; /* Позволяем элементам переноситься на новую строку на маленьких экранах */
+}
+
+.logo {
+  max-width: 80px; /* Максимальная ширина */
+  height: auto;     /* Сохраняет пропорции */
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.menu-section {
+  display: flex;
+  align-items: center; /* Выравнивание по центру по вертикали */
+  gap: 10px; /* Расстояние между кнопкой меню и списком */
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  color: var(--white); /* Белый текст */
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: var(--button-blue);
+}
+
+.drpdwn {
+  display: none;
+  position: absolute;
+  background-color: var(--navy-blue);
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.menu li:hover .drpdwn {
+  display: block;
+}
+
+.drpdwn li {
+  width: 100%;
+}
+
+/* Стили для баннера */
+.banner_wrapper {
+  background-color: var(--light-blue);
+  padding: 40px 0;
+}
+
+.banner_slider {
+  position: relative;
+}
+
+.banner_img img {
+  max-width: 500px;
+  height: auto;
+}
+
+.banner_content {
+  text-align: left;
+}
+
+.banner_content h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--dark-blue);
+}
+
+.banner_content p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: var(--dark-blue);
+}
+
+.banner_content .btn {
+  display: inline-block;
+  background-color: var(--button-blue);
+  color: var(--white);
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.banner_content .btn:hover {
+  background-color: var(--navy-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* CTA sections */
+.cta_wrapper, .join_member_wrapper {
+  padding: 50px 0;
+  background-color: var(--white);
+}
+
+.cta_wrapper {
+  background-color: var(--light-gray);
+}
+
+.cta_content h3, .join_member_box h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: var(--dark-blue);
+}
+
+.cta_content p, .join_member_box p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Benefits section */
+.benefits_wrapper {
+  padding: 60px 0;
+  background-color: var(--white);
+}
+
+.benefits_wrapper h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: var(--dark-blue);
+}
+
+.benefits_wrapper section {
+  text-align: center;
+  padding: 25px;
+  margin-bottom: 20px;
+  background-color: var(--light-gray);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.benefits_wrapper section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 51, 102, 0.1);
+}
+
+.benefits_wrapper img {
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.benefits_wrapper h5 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: var(--dark-blue);
+}
+
+.ben-link {
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 10px;
+  /* Добавляем стили для кнопки */
+  background-color: var(--navy-blue); /* Темно-синий фон */
+  color: var(--white); /* Белый текст */
+  padding: 8px 16px; /* Отступы внутри кнопки */
+  border-radius: 4px; /* Закругленные углы */
+  transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
+}
+
+.ben-link:hover {
+  /* color: var(--navy-blue); */
+  background-color: var(--button-blue); /* Более светлый синий при наведении */
+  /* Можно также немного изменить цвет текста, если нужно */
+  /* color: var(--light-blue); */
+}
+
+.benefit_join {
+  background: linear-gradient(135deg, var(--button-blue) 0%, var(--navy-blue) 100%);
+  color: var(--white);
+}
+
+.benefit_join h4 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.benefit_join .btn {
+  background-color: var(--white);
+  color: var(--navy-blue);
+}
+
+.benefit_join .btn:hover {
+  background-color: var(--light-blue);
+}
+
+/* Resources section */
+.resource_wrapper {
+  padding: 60px 0;
+  background-color: var(--light-gray);
+}
+
+.resource_wrapper h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: var(--dark-blue);
+}
+
+.resource_wrapper section {
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: var(--white);
+  transition: transform 0.3s ease;
+}
+
+.resource_wrapper section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 51, 102, 0.1);
+}
+
+#pink {
+  background-color: var(--pink-bg);
+}
+
+#white {
+  background-color: var(--white);
+}
+
+#purple {
+  background-color: var(--purple-bg);
+}
+
+.resource_wrapper h5 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: var(--dark-blue);
+}
+
+/* Bottom description */
+.bottom_desc {
+  padding: 60px 0;
+  background-color: var(--white);
+}
+
+.bottom_content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: var(--dark-blue);
+}
+
+.bottom_content img, .join_member_wrapper img, .bottom_desc img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Join section */
+.join_wrapper {
+  background-color: var(--light-gray);
+}
+
+.join_ad {
+  padding: 50px 0;
+  background-color: var(--white);
+}
+
+.join_box h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: var(--dark-blue);
+}
+
+.join_content {
+  padding: 50px 0;
+  background-color: var(--light-blue);
+}
+
+.join_content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--dark-blue);
+}
+
+/* Footer */
+footer {
+  background-color: var(--navy-blue);
+  color: var(--white);
+  padding: 40px 0;
+}
+
+.footer_intro {
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer_intro img {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer_content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+.footer_menu, .footer_social_icons {
+  list-style: none;
+}
+
+.footer_menu li, .footer_social_icons li {
+  margin-bottom: 10px;
+}
+
+.footer_menu a, .footer_social_icons a {
+  color: var(--medium-blue);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer_menu a:hover, .footer_social_icons a:hover {
+  color: var(--white);
+}
+
+.footer_social_icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer_copyright {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--medium-blue);
+  font-size: 0.9rem;
+}
+
+.text-end {
+  text-align: right;
+}
+
+/* Mobile menu */
+.menu_round {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 24px;
+  cursor: pointer;
+  padding: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu_round {
+    display: block;
+  }
+  
+  .menu {
+    display: none;
+    flex-direction: column;
+  }
+  
+  .menu.active {
+    display: flex;
+  }
+  
+  .col-md-3, .col-md-4, .col-md-6, .col-md-9, .col-lg-3, .col-lg-4, .col-lg-6, .col-lg-9 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .banner_content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .benefits_wrapper h2, .resource_wrapper h2 {
+    font-size: 1.8rem;
+  }
+  
+ .text-end {
+  text-align: right;
+}
+  
+}
