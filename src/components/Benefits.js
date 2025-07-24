@@ -1,33 +1,34 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Добавляем Link из react-router-dom
 
 function Benefits() {
   const benefits = [
     {
-      icon: './images/benefit-icon1.png' ,
+      icon: `${process.env.PUBLIC_URL}/images/benefit-icon1.png`,
       title: 'Направления психотерапии',
       text: 'Здесь можно выбрать не только своего специалиста, но и ознакомиться с различными направлениями психотерапии, задать интересующие вас вопросы.',
       link: '/benefits/directions'
     },
     {
-      icon: './images/benefit-icon2.png',
+      icon: `${process.env.PUBLIC_URL}/images/benefit-icon2.png`,
       title: 'Психотерапевтические группы',
       text: 'Психотерапевтическая группа – это сообщество людей, объединённых с целью решения проблем и внутренних конфликтов каждого участника.',
-      link: '/benefits/grupppsy'
+      link: '/benefits/grupp-psy'  // Исправлена опечатка: было grupppsy
     },
     {
-      icon: './images/benefit-icon3.png',
+      icon: `${process.env.PUBLIC_URL}/images/benefit-icon3.png`,
       title: 'Открытые семинары',
       text: 'Открытые семинары представляют собой обсуждение различных психологических тем.',
       link: '/benefits/seminars'
     },
     {
-      icon: './images/benefit-icon4.png',
+      icon: `${process.env.PUBLIC_URL}/images/benefit-icon4.png`,
       title: 'Интервизионные группы',
       text: 'В нашей Ассоциации проводятся регулярные встречи, на которых мы еженедельно разбираем кейсы участников, трудности, которые встречаются в нашей непростой работе, феномены, с которыми встречаемся в процессе консультирования и многое другое.',
       link: '/benefits/intervision'
     },
     {
-      icon: './images/benefit-icon5.png',
+      icon: `${process.env.PUBLIC_URL}/images/benefit-icon5.png`,
       title: 'Тренинговый раздел. Обучение.',
       text: 'Открыты к предложениям различных тем и в будущем будем нарабатывать свою базу готовых мероприятий.',
       link: '/benefits/tr'
@@ -45,7 +46,7 @@ function Benefits() {
                 <img src={benefit.icon} alt={`Benefit ${index + 1}`} />
                 <h5 dangerouslySetInnerHTML={{ __html: benefit.title }}></h5>
                 <p>{benefit.text}</p>
-                <a href={benefit.link} className="ben-link">Узнать больше</a>
+                <Link to={benefit.link} className="ben-link">Узнать больше</Link>
               </section>
             </div>
           ))}
@@ -53,7 +54,7 @@ function Benefits() {
             <section className="benefit_join">
               <article>
                 <h4>ПРИСОЕДИНЯЙТЕСЬ К СООБЩЕСТВУ<br />ПРОФЕССИОНАЛЬНЫХ ПСИХОЛОГОВ</h4>
-                <a href="/package" className="btn">ВСТУПИТЬ В АПП</a>
+                <Link to="/join-association" className="btn">ВСТУПИТЬ В АПП</Link>
               </article>
             </section>
           </div>

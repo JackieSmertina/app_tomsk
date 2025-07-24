@@ -32,12 +32,12 @@ function App() {
           <Route path="/membership-directory" element={<Clients />} />
           <Route path="/find-psychologist" element={<FindPsychologist />} />
           <Route path="/find-accredited-centers" element={<FindAccreditedCenters />} />
-          <Route path="/benefits/grupppsy" element={<GruppPsy />} />
+          <Route path="/benefits/grupp-psy" element={<GruppPsy />} />
           <Route path="/benefits/directions" element={<Directions />}/>
           <Route path="/benefits/seminars" element={<Seminars />}/>
           <Route path="/benefits/intervision" element={<Intervision />}/>
           <Route path="/benefits/tr" element={<Tr />}/>
-          <Route path="/joinassociation" element={<JoinAssociation />}/>
+          <Route path="/join-association" element={<JoinAssociation />}/>
         </Routes>
         <Footer />
       </div>
