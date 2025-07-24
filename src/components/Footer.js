@@ -42,7 +42,7 @@ function Footer() {
               <p>© 2025 Ассоциация Практикующих Психологов</p>
             </div>
             <div className="col-12 col-sm-12 col-md-6 col-lg-6 text-end">
-              <p>Разработано JeckieS</p>
+              <p>Разработано JeckS</p>
             </div>
           </div>
         </div>
