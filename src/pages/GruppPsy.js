@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Grupp_psy() {
+function GruppPsy() {
     return (
     <div className="container" style={{ padding: '50px 0' }}>
       
@@ -25,4 +25,4 @@ function Grupp_psy() {
 
 
 
-export default Grupp_psy;
+export default GruppPsy;

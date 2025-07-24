@@ -32,7 +32,7 @@ function Resources() {
               <section id={resource.id}>
                 <h5>{resource.title}</h5>
                 <p>{resource.text}</p>
-                <a href={resource.link} className="ben-link">Read More</a>
+                <a href={resource.link} className="ben-link">Читать больше</a>
               </section>
             </div>
           ))}

@@ -10,7 +10,7 @@ function Header() {
           <div className="menu-container">
             {/* Логотип */}
             <a className="logo" href="/">
-              <img className="logo" src="/images/logo.png" alt="APP Logo" />
+              <img className="logo" src="./images/logo.png" alt="APP Logo" />
             </a>
 
             {/* Меню */}
@@ -20,16 +20,16 @@ function Header() {
                 {/* Меню */}
                 <li><a href="/">Главная</a></li>
                 <li>
-                  <a href="#">О нас</a>
+                  <a href="#" role="button" tabIndex="0">О нас</a>
                   <ul className="drpdwn">
-                    <li><a href="/About">История создания ассоциации</a></li>
+                    <li><a href="/About">История создания Aссоциации</a></li>
                     <li><a href="/public-protection">Этический кодекс</a></li>
                     <li><a href="/rci-registration">Памятные моменты</a></li>
                     <li><a href="/executives">Руководители</a></li>
                   </ul>
                 </li>
                 <li>
-                  <a href="join_association">Вступить в ассоциацию</a>
+                  <a href="join_association">Вступить в Aссоциацию</a>
   
                 </li>
                 <li><a href="/resources">Для коллег</a></li>
@@ -42,10 +42,10 @@ function Header() {
             {/* Социальные сети - перемещаем сюда */}
             <div className="social-links">
               <a href="https://vk.com/spp_psy_tomsk" target="_blank" rel="noopener noreferrer">
-                <img src="/images/vk-icon.png" alt="VK" />
+                <img src="./images/vk-icon.png" alt="VK" />
               </a>
               <a href="https://t.me/spp_psy_tomsk" target="_blank" rel="noopener noreferrer">
-                <img src="/images/telegram-icon.png" alt="Telegram" />
+                <img src="./images/telegram-icon.png" alt="Telegram" />
               </a>
             </div>
           </div>

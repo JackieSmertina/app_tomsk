@@ -10,17 +10,18 @@ import Clients from './pages/Clients';
 import FindPsychologist from './pages/FindPsychologist';
 import FindAccreditedCenters from './pages/FindAccreditedCenters';
 import Colleagues from './pages/Colleagues';
-import Grupp_psy from './pages/Grupp_psy';
+import GruppPsy from './pages/GruppPsy';
 import Directions from './pages/Directions';
 import Seminars from './pages/Seminars';
 import Intervision from './pages/Intervision';
 import Tr from './pages/Tr';
-import Join_association from './pages/Join_association';
+import JoinAssociation from './pages/JoinAssociation';
 
+const basename = process.env.NODE_ENV === 'production' ? '/app_tomsk/' : '/';
 
 function App() {
   return (
-    <Router>
+    <Router basename={basename}>  {/* Добавлен basename здесь */}
       <div className="App">
         <Header />
         <Routes>
@@ -31,12 +32,12 @@ function App() {
           <Route path="/membership-directory" element={<Clients />} />
           <Route path="/find-psychologist" element={<FindPsychologist />} />
           <Route path="/find-accredited-centers" element={<FindAccreditedCenters />} />
-          <Route path="/benefits/grupp_psy" element={<Grupp_psy />} />
+          <Route path="/benefits/grupppsy" element={<GruppPsy />} />
           <Route path="/benefits/directions" element={<Directions />}/>
           <Route path="/benefits/seminars" element={<Seminars />}/>
           <Route path="/benefits/intervision" element={<Intervision />}/>
           <Route path="/benefits/tr" element={<Tr />}/>
-          <Route path="/join_association" element={<Join_association />}/>
+          <Route path="/joinassociation" element={<JoinAssociation />}/>
         </Routes>
         <Footer />
       </div>

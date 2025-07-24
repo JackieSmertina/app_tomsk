@@ -33,7 +33,7 @@ function Banner() {
             <div className="row">
               <div className="col-12 col-sm-6 col-md-6 col-lg-6 banner_img">
                 <section>
-                  <img src="/images/banner100.png" alt="Join Community Banner" />
+                  <img src="./images/banner100.png" alt="Join Community Banner" />
                 </section>
               </div>
               <div className="col-12 col-sm-6 col-md-6 col-lg-6 banner_content">
@@ -51,7 +51,7 @@ function Banner() {
             <div className="row">
               <div className="col-12 col-sm-6 col-md-6 col-lg-6 banner_img">
                 <section>
-                  <img src="/images/banner200.png" alt="APP Logo Banner" />
+                  <img src="./images/banner200.png" alt="APP Logo Banner" />
                 </section>
               </div>
               <div className="col-12 col-sm-6 col-md-6 col-lg-6 banner_content">
@@ -69,7 +69,7 @@ function Banner() {
             <div className="row">
               <div className="col-12 col-sm-6 col-md-6 col-lg-6 banner_img">
                 <section>
-                  <img src="/images/banner300.png" alt="Find Psychologist Banner" />
+                  <img src="./images/banner300.png" alt="Find Psychologist Banner" />
                 </section>
               </div>
               <div className="col-12 col-sm-6 col-md-6 col-lg-6 banner_content">

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Join_association() {
+function JoinAssociation() {
     return (
     <div className="container" style={{ padding: '50px 0' }}>
       
@@ -15,4 +15,4 @@ function Join_association() {
 
 
 
-export default Join_association;
+export default JoinAssociation;
