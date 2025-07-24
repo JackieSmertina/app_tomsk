@@ -6,7 +6,7 @@ function Footer() {
       <div className="container">
         <div className="footer_intro">
           <section>
-            <img src="./images/footer_logo.png" alt="Footer Logo" />
+            <img src={`${process.env.PUBLIC_URL}/images/footer_logo.png`} alt="Footer Logo" />
             <p>
               Ассоциация практикующих психологов (АПП) <br />Все наши профессиональные члены имеют квалификацию для ведения психологической практики  соответствии с кодексом поведения, этикета и этики. АПП стремится обеспечить максимально высокие профессиональные стандарты.<br />
             </p>
@@ -20,10 +20,10 @@ function Footer() {
                 <h3>КОНТАКТЫ</h3>
                 <ul className="footer_social_icons">
                   <a href="https://vk.com/spp_psy_tomsk" target="_blank" rel="noopener noreferrer">
-                  <img src="./images/vk-icon.png" alt="VK" style={{ width: '30px', height: '30px', borderRadius: '70%'}}/>
+                  <img src={`${process.env.PUBLIC_URL}/images/vk-icon.png`} alt="VK" style={{ width: '30px', height: '30px', borderRadius: '70%'}}/>
                 </a>
                 <a href="https://t.me/spp_psy_tomsk" target="_blank" rel="noopener noreferrer">
-                  <img src="./images/telegram-icon.png" alt="Telegram" style={{ width: '30px', height: '30px', borderRadius: '70%'}}/>
+                  <img src={`${process.env.PUBLIC_URL}/images/telegram-icon.png`} alt="Telegram" style={{ width: '30px', height: '30px', borderRadius: '70%'}}/>
                    </a>
                 </ul>
               </section>

@@ -10,7 +10,7 @@ function Header() {
           <div className="menu-container">
             {/* Логотип */}
             <a className="logo" href="/">
-              <img className="logo" src="./images/logo.png" alt="APP Logo" />
+              <img className="logo" src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="APP Logo" />
             </a>
 
             {/* Меню */}
@@ -22,15 +22,14 @@ function Header() {
                 <li>
                   <a href="#" role="button" tabIndex="0">О нас</a>
                   <ul className="drpdwn">
-                    <li><a href="/About">История создания Aссоциации</a></li>
+                    <li><a href="/About">История создания Ассоциации</a></li>
                     <li><a href="/public-protection">Этический кодекс</a></li>
                     <li><a href="/rci-registration">Памятные моменты</a></li>
                     <li><a href="/executives">Руководители</a></li>
                   </ul>
                 </li>
                 <li>
-                  <a href="join_association">Вступить в Aссоциацию</a>
-  
+                  <a href="join_association">Вступить в Ассоциацию</a>
                 </li>
                 <li><a href="/resources">Для коллег</a></li>
                 <li><a href="/membership-directory">Для общества</a></li>
@@ -42,10 +41,10 @@ function Header() {
             {/* Социальные сети - перемещаем сюда */}
             <div className="social-links">
               <a href="https://vk.com/spp_psy_tomsk" target="_blank" rel="noopener noreferrer">
-                <img src="./images/vk-icon.png" alt="VK" />
+                <img src={`${process.env.PUBLIC_URL}/images/vk-icon.png`} alt="VK" />
               </a>
               <a href="https://t.me/spp_psy_tomsk" target="_blank" rel="noopener noreferrer">
-                <img src="./images/telegram-icon.png" alt="Telegram" />
+                <img src={`${process.env.PUBLIC_URL}/images/telegram-icon.png`} alt="Telegram" />
               </a>
             </div>
           </div>

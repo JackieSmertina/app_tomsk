@@ -14,7 +14,7 @@ function BottomDescription() {
           </div>
           <div className="col-12 col-sm-12 col-md-6 col-lg-6">
             <section>
-              <img src="./images/image1.png" alt="Psychologists" />
+              <img src={`${process.env.PUBLIC_URL}/images/image1.png`} alt="Psychologists" />
             </section>
           </div>
         </div>

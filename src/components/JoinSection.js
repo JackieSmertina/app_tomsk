@@ -8,7 +8,7 @@ function JoinSection() {
           <div className="row">
             <div className="col-12 col-sm-12 col-md-6 col-lg-6">
               <section>
-                <img src="./images/image2.png" alt="Join us" style={{ width: '500px', height: 'auto' }} />
+                <img src={`${process.env.PUBLIC_URL}/images/image2.png`} alt="Join us" style={{ width: '500px', height: 'auto' }} />
               </section>
             </div>
             <div className="col-12 col-sm-12 col-md-6 col-lg-6 join_box">

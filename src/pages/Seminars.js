@@ -11,14 +11,10 @@ function Seminars() {
 Открывайтесь психологии в кругу специалистов.
 
 <a href="https://t.me/spp_psy_tomsk" target="_blank" rel="noopener noreferrer">
-                  <img src="./images/telegram-icon.png" alt="Telegram" style={{width: '30px', height: 'auto'}}/>
+                  <img src={`${process.env.PUBLIC_URL}/images/telegram-icon.png`} alt="Telegram" style={{width: '30px', height: 'auto'}}/>
                 </a></p>
     </div>
   );
 }
- 
-  
-
-
 
 export default Seminars;

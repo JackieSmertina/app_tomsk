@@ -1,5 +1,6 @@
+// src/components/Benefits.js
 import React from 'react';
-import { Link } from 'react-router-dom'; // Добавляем Link из react-router-dom
+import { Link } from 'react-router-dom';
 
 function Benefits() {
   const benefits = [
@@ -13,7 +14,7 @@ function Benefits() {
       icon: `${process.env.PUBLIC_URL}/images/benefit-icon2.png`,
       title: 'Психотерапевтические группы',
       text: 'Психотерапевтическая группа – это сообщество людей, объединённых с целью решения проблем и внутренних конфликтов каждого участника.',
-      link: '/benefits/grupp-psy'  // Исправлена опечатка: было grupppsy
+      link: '/benefits/grupp_psy'
     },
     {
       icon: `${process.env.PUBLIC_URL}/images/benefit-icon3.png`,
@@ -54,7 +55,7 @@ function Benefits() {
             <section className="benefit_join">
               <article>
                 <h4>ПРИСОЕДИНЯЙТЕСЬ К СООБЩЕСТВУ<br />ПРОФЕССИОНАЛЬНЫХ ПСИХОЛОГОВ</h4>
-                <Link to="/join-association" className="btn">ВСТУПИТЬ В АПП</Link>
+                <Link to="/join_association" className="btn">ВСТУПИТЬ В АПП</Link>
               </article>
             </section>
           </div>

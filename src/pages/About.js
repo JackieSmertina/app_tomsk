@@ -21,9 +21,9 @@ function About() {
   // Массив с путями к изображениям для слайд-шоу
   // Убедись, что эти изображения находятся в папке `public/images/`
   const images = [
-    "./images/about-slider1.jpg",
-    "./images/about-slider2.jpg",
-    "./images/about-slider3.jpg",
+    `${process.env.PUBLIC_URL}/images/about-slider1.jpg`,
+    `${process.env.PUBLIC_URL}/images/about-slider2.jpg`,
+    `${process.env.PUBLIC_URL}/images/about-slider3.jpg`,
     // Добавь больше путей к изображениям, если нужно
   ];
 
